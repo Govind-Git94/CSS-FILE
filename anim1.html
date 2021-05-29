@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #one{
+            width:100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .child{
+            width:20px;
+            height:20px;
+            margin-right:12px;
+            /* background: aqua; */
+            background:linear-gradient(to right bottom,yellow,green,blue,orange);
+            /* border-radius: 50%; */
+            /* transition:all 2s; */
+            animation:myMove .5s infinite alternate;
+        }
+        .child:hover{
+            /* transform:rotate(180deg) */
+        }
+
+        @keyframes myMove{
+            to{border-radius:0%;}
+            from{border-radius:50%}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id='one'>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <!-- 
+        Animation
+            Movement of any object
+        animation-name:
+        animation-duration:
+        animation-delay:
+        animation-iteration-count:
+        animation-direction:
+        animation-timing-function:
+
+        Shorthand 
+            animation:
+    -->
+</body>
+</html>

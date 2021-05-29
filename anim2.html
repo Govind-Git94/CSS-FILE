@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        #one{
+            width: 100px;
+            height: 100px;
+            background:radial-gradient(red,green,cyan);
+            border-radius: 50%;
+            animation:move 2s infinite alternate-reverse ease-in-out;
+            position:absolute;
+        }
+
+        @keyframes move{
+            to{top:0px;left:0px;}
+            from{top:0px;left:600px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        #main{
+        }
+        .one{
+            width:100px;
+            height:100px;
+            background:#5c2d7f;
+            position: absolute;
+            top:0px;
+            left:110px;
+            border-radius: 50%;
+            animation:one 1.2s infinite linear alternate;
+        }
+        .two{
+            width:100px;
+            height:100px;
+            background:#2cd53b;
+            position: absolute;
+            top:0px;
+            left:220px;
+            border-radius: 50%;
+            animation:one 1.2s .2s infinite linear alternate;
+        }
+
+        .three{
+            width:100px;
+            height:100px;
+            background:#d3c8f2;
+            position: absolute;
+            top:0px;
+            left:330px;
+            border-radius: 50%;
+            animation:one 1.2s .4s infinite linear alternate;
+        }
+
+        .four{
+            width:100px;
+            height:100px;
+            background:#a5c6d5;
+            position: absolute;
+            top:0px;
+            left:440px;
+            border-radius: 50%;
+            animation:one 1.2s .6s infinite linear alternate;
+        }
+
+        .five{
+            width:100px;
+            height:100px;
+            background:cyan;
+            position: absolute;
+            top:0px;
+            left:550px;
+            border-radius: 50%;
+            animation:one 1.2s .8s infinite linear alternate;
+        }
+
+        .six{
+            width:100px;
+            height:100px;
+            background:magenta;
+            position: absolute;
+            top:0px;
+            left:660px;
+            border-radius: 50%;
+            animation:one 1.2s 1.0s infinite linear alternate;
+        }
+
+        .seven{
+            width:100px;
+            height:100px;
+            background:blue;
+            position: absolute;
+            top:0px;
+            left:770px;
+            border-radius: 50%;
+            animation:one 1.2s 1.2s infinite linear alternate;
+        }
+
+
+        @keyframes one{
+            0%{ top:0px}
+            100%{top:600px}
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+    </div>
+</body>
+</html>

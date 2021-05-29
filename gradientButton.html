@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Roboto',sans-serif;
+            background: #26242e;
+        }
+        .btn-main{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            height: 55px;
+            width: 170px;
+            background: linear-gradient(110deg, #4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+            border-radius:5px;
+            display: flex;
+            align-items: center;
+            /* animation:grMove .7s linear infinite; */
+            justify-content: center;
+        }
+        .btn-main a{
+            display: block;
+            width:165px;
+            height:50px;
+            background: #26242e;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            color:#fff;
+            font-size:1.2rem;
+        }
+        .btn-main:hover{
+            animation:grMove .7s linear infinite;
+        }
+
+        @keyframes grMove{
+            0%{
+                background-position:0;
+            }
+            100%{
+                background-position:-200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-main">
+        <a href="">Gradient Button</a>
+    </div>
+</body>
+</html>
